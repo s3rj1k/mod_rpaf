@@ -1,0 +1,14 @@
+Source: libapache2-mod-ssl-stub
+Maintainer: s3rj1k <evasive.gyron@gmail.com>
+Section: httpd
+Priority: extra
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), dh-apache2, apache2-dev (>= 2.4.2-1~)
+
+Package: libapache2-mod-ssl-stub
+Architecture: any
+Depends: apache2-api-20120211, apache2-mpm-prefork, ${libapache2-mod-ssl-stub:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: module for Apache2 which fixes SSL proxied requests
+ This module fixes SSL proxied requests by setting
+ the HTTPS environment variable passed from the
+ proxy via X-Forwarded-Proto

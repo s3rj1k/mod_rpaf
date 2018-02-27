@@ -1,18 +1,16 @@
-# Makefile for mod_rpaf.c (gmake)
-# $Id: Makefile 16 2007-12-13 03:40:22Z thomas $
-APXS=./apxs.sh
+APXS=/usr/bin/apxs2
 
-rpaf: mod_rpaf.so
+rpaf: mod_ssl_stub.so
 	@echo make done
-	@echo type \"make install\" to install mod_rpaf
+	@echo type \"make install\" to install mod_ssl_stub
 
-mod_rpaf.so: mod_rpaf.c
-	$(APXS) -c -n $@ mod_rpaf.c
+mod_ssl_stub.so: mod_ssl_stub.c
+	$(APXS) -c -n $@ mod_ssl_stub.c
 
-mod_rpaf.c:
+mod_ssl_stub.c:
 
-install: mod_rpaf.so
-	$(APXS) -i -S LIBEXECDIR=$(DESTDIR)$$($(APXS) -q LIBEXECDIR)/ -n mod_rpaf.so mod_rpaf.la
+install: mod_ssl_stub.so
+	$(APXS) -i -S LIBEXECDIR=$(DESTDIR)$$($(APXS) -q LIBEXECDIR)/ -n mod_ssl_stub.so mod_ssl_stub.la
 
 clean:
 	rm -rf *~ *.o *.so *.lo *.la *.slo *.loT .libs/

@@ -1,0 +1,10 @@
+libapache2-mod-ssl-stub for Debian
+-----------------------------
+
+  Configuration:
+
+    This module fixes SSL proxied requests by setting
+    the HTTPS environment variable passed from the
+    proxy via X-Forwarded-Proto
+
+ -- s3rj1k <evasive.gyron@gmail.com>  Wed, 28 Feb 2018 12:59:04 +0200
