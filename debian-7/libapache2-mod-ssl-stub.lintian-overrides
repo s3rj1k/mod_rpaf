@@ -3,3 +3,4 @@ libapache2-mod-ssl-stub: apache2-reverse-dependency-calls-wrapper-script prerm a
 libapache2-mod-ssl-stub: apache2-reverse-dependency-calls-invoke-rc.d prerm
 libapache2-mod-ssl-stub: apache2-reverse-dependency-calls-wrapper-script postinst a2enmod
 libapache2-mod-ssl-stub: apache2-reverse-dependency-calls-invoke-rc.d postinst
+libapache2-mod-ssl-stub: hardening-no-fortify-functions usr/lib/apache2/modules/mod_ssl_stub.so
