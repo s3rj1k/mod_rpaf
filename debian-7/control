@@ -3,7 +3,7 @@ Maintainer: s3rj1k <evasive.gyron@gmail.com>
 Section: httpd
 Priority: extra
 Standards-Version: 3.9.6
-Build-Depends: debhelper (>= 7.0.50~), dh-apache2, apache2-prefork-dev | apache2-threaded-dev
+Build-Depends: debhelper (>= 7.0.50~), apache2-prefork-dev | apache2-threaded-dev
 
 Package: libapache2-mod-ssl-stub
 Architecture: any
