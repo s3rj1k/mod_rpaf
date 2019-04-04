@@ -1,6 +1,6 @@
 APXS=/usr/bin/apxs2
 
-rpaf: mod_ssl_stub.so
+ssl_stub: mod_ssl_stub.so
 	@echo make done
 	@echo type \"make install\" to install mod_ssl_stub
 
