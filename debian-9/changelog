@@ -1,0 +1,5 @@
+libapache2-mod-ssl-stub (2019.08.16+deb9u1) stretch; urgency=low
+
+  * Initial release.
+
+ -- s3rj1k <evasive.gyron@gmail.com>  Fri, 16 Aug 2019 12:59:04 +0200

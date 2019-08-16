@@ -1,0 +1,3 @@
+<IfModule !mod_ssl.c>
+  LoadModule ssl_stub_module /usr/lib/apache2/modules/mod_ssl_stub.so
+</IfModule>
